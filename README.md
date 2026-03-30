@@ -1,2 +1,2 @@
 # cyrra
-An all new Carrd insipred website for Cyrra (me).
+An all new Carrd inspired website for Cyrra (me).
