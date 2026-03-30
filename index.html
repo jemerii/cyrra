@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyrra | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <h1 id="splash-text">Annyeonggg, Welcomeee! ^^</h1>
+    </div>
+    <div class="wave-container">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.03)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.05)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.02)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,0.07)" />
+            </g>
+        </svg>
+    </div>
+    <main class="wrapper">
+        <aside class="side-card">
+            <div class="image-placeholder profile-img">
+                <img class="profile-img" src="images/winter-pfp.jpg">
+            </div>
+            <h1>Cyrra.</h1>
+            
+            <div class="bio">
+                <p>Hi, I am <b>Cyrra!</b> I'm an <b>18 year-old</b> K-pop fan who happens to play maimai. I look chopped irl so don't be curious on what I look like. Even so, I love me some fine shyt like the woman in my pfp, <b>Winter from aespa</b>.</p>
+                <p>I have been listening to <b>Kpop since late 2020</b>—my first kpop group being <b>ITZY</b>. And ever since last year, I have been playing some <b>Valorant</b>, <b>maimai</b> and <b>osu!mania</b>. Please don't invite me to play comp, like I'm trash trash (<i>hardstuck Iron 2</i>).</p>
+                <p>But maimai and osu!mania, maybe. I do not have an Aime card nor a Banapassport atm, but I do play in an offline <b>FiNALE</b> cab near me. I can say that I'm an <b>Expert player</b>. So yeahh! If you want more info about me, just slide into my DMs! ><</p>
+            </div>
+
+            <div class="links">
+                <a href="javascript:void(0)" id="discord-link">Discord</a>
+                <a href="https://x.com/arle_cyrra" target="_blank">Twitter</a>
+            </div>
+        </aside>
+
+        <section class="main-card">
+            <div class="content-group">
+                <h2>Hobbies</h2>
+                <div class="games-grid">
+                    <div class="game-item">
+                        <div class="image-placeholder game-img"><img class="game-img" src="images/valorant-logo.jpg"></div>
+                        <strong>Valorant</strong>
+                    </div>
+                    <div class="game-item">
+                        <div class="image-placeholder game-img"><img class="game-img" src="images/maimai.png"></div>
+                        <strong>maimai FiNALE</strong>
+                    </div>
+                    <div class="game-item">
+                        <div class="image-placeholder game-img"><img class="game-img" src="images/osu-logo.png"></div>
+                        <strong>osu!mania</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-group">
+                <h2>Favorites</h2>
+                <div class="image-placeholder section-img">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7aI3DYyubodBwHo1phLN7k?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <p>> Check out my Kpop playlist!</p>
+            </div>
+            <div class="note">
+                <a href="https://vercel.com/" id="note-link">This website was self-made and deployed in Vercel through Github.</a>
+            </div>
+        </section>
+    </main>
+    <div id="discord-modal" class="modal-overlay">
+        <div class="modal-content side-card">
+            <span class="close-button">&times;</span>
+            <div class="image-placeholder profile-img">
+                <img class="profile-img popup" src="images/winter-pfp.jpg" alt="Discord PFP">
+            </div>
+            <h3>Discord</h3>
+            <p class="discord-tag">arlecyrra</p>
+            <p class="subtitle">Feel free to send a friend request!</p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
