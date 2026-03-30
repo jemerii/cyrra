@@ -370,8 +370,11 @@ span {
 
 
 @media (max-width: 1024px), (max-height: 800px) {
-    body {
-        overflow: auto; 
+    html, body {
+        width: 100%;
+        position: relative;
+        overflow-y: scroll; 
+        overflow-x: hidden;
         align-items: flex-start; 
         padding: 40px 0;
     }
@@ -413,5 +416,32 @@ span {
 
     .game-img { 
         aspect-ratio: 16 / 9; 
+    }
+
+    #splash-text {
+        font-size: 1rem; 
+    }
+
+    #splash-screen{
+        position: fixed;
+        align-items: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    html, body {
+        width: 100%;
+        position: relative;
+        overflow-y: scroll; 
+        overflow-x: hidden;
+    }
+
+    #splash-text, #splash-screen {
+        display: none;
     }
 }
