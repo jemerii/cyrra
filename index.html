@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="splash-screen">
-        <h1 id="splash-text">Annyeonggg, Welcomeee! ^^</h1>
-    </div>
     <div class="wave-container">
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -49,19 +46,10 @@
         <section class="main-card">
             <div class="content-group">
                 <h2>Hobbies</h2>
-                <div class="games-grid">
-                    <div class="game-item">
-                        <div class="image-placeholder game-img"><img class="game-img" src="images/valorant-logo.jpg"></div>
-                        <strong>Valorant</strong>
-                    </div>
-                    <div class="game-item">
-                        <div class="image-placeholder game-img"><img class="game-img" src="images/maimai.png"></div>
-                        <strong>maimai FiNALE</strong>
-                    </div>
-                    <div class="game-item">
-                        <div class="image-placeholder game-img"><img class="game-img" src="images/osu-logo.png"></div>
-                        <strong>osu!mania</strong>
-                    </div>
+                <div class="hobbies-list">
+                    <a href="javascript:void(0)" id="trigger-games"><p>> Playing games</p></a>
+                    <a href="javascript:void(0)" id="trigger-mock"><p>> Mock broadcast</p></a>
+                    <a href="javascript:void(0)" id="trigger-docs"><p>> Watching documentaries</p></a>
                 </div>
             </div>
 
@@ -73,12 +61,12 @@
                 <p>> Check out my Kpop playlist!</p>
             </div>
             <div class="note">
-                <a href="https://github.com/jemerii/cyrra" id="note-link" target="_blank">This website is self-made and deployed in Vercel through Github.</a>
+                <a href="https://vercel.com/" id="note-link">This website is self-made and deployed in Vercel through Github.</a>
             </div>
         </section>
     </main>
     <div id="discord-modal" class="modal-overlay">
-        <div class="modal-content side-card">
+        <div class="modal-content popup">
             <span class="close-button">&times;</span>
             <div class="image-placeholder profile-img">
                 <img class="profile-img popup" src="images/winter-pfp.jpg" alt="Discord PFP">
@@ -86,6 +74,51 @@
             <h3>Discord</h3>
             <p class="discord-tag">arlecyrra</p>
             <p class="subtitle">Feel free to send a friend request!</p>
+        </div>
+    </div>
+    <div id="modal-games" class="modal-overlay">
+        <div class="modal-content popup">
+            <span class="close-btn">&times;</span>
+            <h3>Games</h3>
+            <div class="games-grid">
+                <div class="game-item">
+                    <div class="game-img-container"><img class="hobbies-img" src="images/valorant-logo.jpg"></div>
+                    <strong class="game-name">Valorant</strong>
+                </div>
+                <div class="game-item">
+                    <div class="game-img-container"><img class="hobbies-img" src="images/maimai.png"></div>
+                    <strong class="game-name">maimai</strong>
+                </div>
+                <div class="game-item">
+                    <div class="game-img-container"><img class="hobbies-img" src="images/osu-logo.png"></div>
+                    <strong class="game-name">osu!mania</strong>
+                </div>
+            </div>
+            <p class="bio" style="margin-top:15px;">These are the games that I usually play. I kinda hate one of them but I also don't :p</p>
+        </div>
+    </div>
+    <div id="modal-mock" class="modal-overlay">
+        <div class="modal-content popup">
+            <span class="close-btn">&times;</span>
+            <h3>Mock Broadcast</h3>
+            <div class="software-grid">
+                <div class="game-item">
+                    <div class="game-img-container"><img class="hobbies-img" src="images/vmix-logo.png"></div>
+                    <strong>vMix</strong>
+                </div>
+                <div class="game-item">
+                    <div class="game-img-container"><img class="hobbies-img" src="images/obs-logo.png"></div>
+                    <strong>OBS</strong>
+                </div>
+            </div>
+            <p class="bio" style="margin-top:15px;">These are the software usually used at my church. I have a copy of the presets they use and I practice the flow of one of our events.</p>
+        </div>
+    </div>
+    <div id="modal-docs" class="modal-overlay">
+        <div class="modal-content popup">
+            <span class="close-btn">&times;</span>
+            <h3>Documentaries</h3>
+            <p class="bio">I usually watch true crime or mystery documentaries, North Korean documentaries, and documentaries produced by the Youtubers, <strong>fern</strong> and <strong>RealLifeLore</strong>.</p>
         </div>
     </div>
 <script src="script.js"></script>
